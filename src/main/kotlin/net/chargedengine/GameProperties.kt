@@ -1,4 +1,3 @@
 package net.chargedengine
 
-class GameProperties {
-}
+data class GameProperties(val name: String, val description: String, val version: String)

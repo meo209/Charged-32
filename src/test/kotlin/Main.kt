@@ -4,18 +4,17 @@ import net.chargedengine.GameProperties
 import net.chargedengine.Window
 
 fun main() {
-    val engine = Engine(
-        Game(
-            GameProperties("Example Game", "Example Game description", "1.0.0"),
-            Window(height = 720, width = 1280, title = "Example Game Title", vsync = true)
-        )
+    Engine.game = ExampleGame(
+        GameProperties("Example Game", "Example Game description", "1.0.0"),
+        Window(height = 500, width = 500, title = "Example Game Title", vsync = true)
     )
-        .initialize()
-        .render()
+
+    Engine.initialize()
+    Engine.render()
 
     Runtime.getRuntime().addShutdownHook(object : Thread() {
         override fun run() {
-            engine.shutdown()
+            Engine.shutdown()
         }
     })
 }
