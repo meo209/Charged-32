@@ -3,6 +3,7 @@ package net.chargedengine
 import com.github.meo209.kevet.notify
 import com.github.meo209.kevet.notifyAsync
 import net.chargedengine.events.*
+import net.chargedengine.gameobject.Scene
 import net.chargedengine.utils.glfwUtilConvertBoolean
 import net.chargedengine.utils.logger
 import org.lwjgl.glfw.GLFW.*
