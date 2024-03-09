@@ -1,0 +1,4 @@
+package net.chargedengine.events
+
+class GameInitializeEvent
+class GameShutdownEvent
